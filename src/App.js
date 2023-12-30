@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { render } from "@testing-library/react";
+import Alert from "@mui/material/Alert";
+import Stack from "@mui/material/Stack";
 
 const App = () => {
   const [data, setData] = useState({});
@@ -19,23 +21,9 @@ const App = () => {
         // Axios http error handling
         .catch((error) => {
           // Error
-          if (error.response) {
-            // The request was made and the server responded with a status code
-            // that falls out of the range of 2xx
-            console.log(error.response.data);
-            console.log(error.response.status);
-            console.log(error.response.headers);
-          } else if (error.request) {
-            // The request was made but no response was received
-            // `error.request` is an instance of XMLHttpRequest in the
-            // browser and an instance of
-            // http.ClientRequest in node.js
-            console.log(error.request);
-          } else {
-            // Something happened in setting up the request that triggered an Error
-            console.log("Error", error.message);
+          {
+            console.log("Enter a valid Location", error);
           }
-          console.log(error.config);
         });
       setLocation("");
     }

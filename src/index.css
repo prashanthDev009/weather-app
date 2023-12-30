@@ -28,7 +28,7 @@ body {
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 h1 {
@@ -57,11 +57,14 @@ h1 {
 .app .search__btn {
   text-align: center;
   padding: 1rem;
+  position: relative;
+  top: 60px;
+  right: -5px;
 }
 
 .app input {
   padding: 0.6rem 1rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   border-radius: 25px;
   border: 1px solid rgba(225, 225, 225, 0.8);
   background: rgba(225, 225, 225, 0.1);
@@ -78,7 +81,7 @@ h1 {
   margin: auto;
   padding: 0 1rem;
   position: relative;
-  top: -5%;
+  top: 7%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -100,6 +103,9 @@ h1 {
 }
 
 .app .bottom {
+  position: absolute;
+  top: 400px;
+  right: 0px;
   display: flex;
   justify-content: space-evenly;
   text-align: center;
